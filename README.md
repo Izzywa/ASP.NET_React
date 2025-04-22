@@ -63,4 +63,19 @@ app.UseSwaggerUI();
 ```
 app.SwaggerUI(o=>o.SwaggerEndpoint("/openapi/v1.json", "Swagger Demo"));
 ```
-- the second one is the title
+- the second parameter is the title
+- now swagger use the openapi provided as default
+
+benefit
+- can have a feel of the api endpoints
+- visualise the route and see that it is up and running
+
+alter the default route of the api
+- `launchSettings.json`
+- (not working starting here)
+- just clone the `launchSettings.json` file.
+    - the default file does not include IISsettings
+
+# `program.cs`
+- where settings are set
+- interface to plug things in
