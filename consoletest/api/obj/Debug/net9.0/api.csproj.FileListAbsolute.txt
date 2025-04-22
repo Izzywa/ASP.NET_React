@@ -32,3 +32,6 @@
 /Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/obj/Debug/net9.0/api.pdb
 /Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/obj/Debug/net9.0/api.genruntimeconfig.cache
 /Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/obj/Debug/net9.0/ref/api.dll
+/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll

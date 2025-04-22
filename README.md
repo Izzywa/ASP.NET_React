@@ -1,0 +1,57 @@
+# Tutorial: Create an ASP.NET Core app with React in Visual Studio
+ - use brew to install 
+ ```
+ brew install --cask dotnet-sdk
+ ```
+ - just the `dotnet` is the runtime, will not allow you to build anything
+ - check with `dotnet --version` to see if dotnet is installed on the computer
+
+
+IDE
+- Jetbrain rider
+    - best option on Mac
+    - cannot run the full visual studio on here
+
+- install C# extension
+
+test the app
+- create a new directory for the app
+```
+dotnet new <template> -o <name of application>
+```
+- generate a new application
+    - microsoft have templates to create application
+    - ex: webapi
+
+
+install SQL server
+- use Microsoft 
+- basic installation
+- install SSMS
+
+if using React 
+- can have the frontend at a separate folder
+
+## make sure you are in the api project folder
+```
+dotnet watch run
+```
+- start to make sure it is working
+- will see Swagger, used to map API end points
+- as of .NET9 could no longger open swagger with this
+    - instead is using OpenAPI as in project.cs
+
+    ```
+    builder.Services.AddOpenApi();
+    ```
+
+- add new package `swashbuckle`
+```
+dotnet add TodoApi.csproj package Swashbuckle.AspNetCore -v 6.6.2
+```
+
+- add swagger UI in `Program.cs` and define where is the documentation that is generated
+```
+app.UseSwaggerUI();
+```
+- go to `{route}/swagger/index.html`
