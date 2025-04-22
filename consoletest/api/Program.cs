@@ -13,7 +13,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseSwaggerUI();
+app.UseSwaggerUI(o=>o.SwaggerEndpoint("/openapi/v1.json", "Swagger UI"));
 
 var summaries = new[]
 {

@@ -55,3 +55,12 @@ dotnet add TodoApi.csproj package Swashbuckle.AspNetCore -v 6.6.2
 app.UseSwaggerUI();
 ```
 - go to `{route}/swagger/index.html`
+- will first get an error that will not be able to fetch API definition
+- `{route}/openapi/v1.json` to see the specification needed for swagger UI
+    - this is the default route microsoft use for openAPI document
+    - specify to swagger that it needs to go to this particular location to get the documentation
+
+```
+app.SwaggerUI(o=>o.SwaggerEndpoint("/openapi/v1.json", "Swagger Demo"));
+```
+- the second one is the title
