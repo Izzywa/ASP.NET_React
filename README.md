@@ -79,3 +79,13 @@ alter the default route of the api
 # `program.cs`
 - where settings are set
 - interface to plug things in
+- things you want to add to your program
+- where middleware will be
+
+# Extensions
+- C# dev kit
+- .NET extension pack
+- .NET Install Tool
+- NuGet Gallery
+- Prettier
+- C# Extension pack by JosKreativ
