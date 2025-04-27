@@ -163,3 +163,5 @@ public Stock? Stock {get; set;}
 public DateTime CreatedOn {get; set;} = DateTime.Now
 ```
 - this automatically fills with the current datetime whenever the data is created
+
+# entity framework
