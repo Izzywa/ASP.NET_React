@@ -186,3 +186,40 @@ Command + shift + p = open NuGet Gallery
 
 ## create a `data` foler in the project folder
 - create a new C# folder named `ApplicationDBContext`
+    - will be a giant class that will allow you to search your individual tables
+    - ORM will transform database tables into objects
+    - this will allow us to specify the table that we want
+
+```
+public class ApplicationDBContext : DBContext
+{
+    public ApplicationDBContext(DbContextOptions dbContextOptions)
+    : base(dbContextOptions)
+    {
+
+    }
+
+    public DbSet<Stock> Stock {get; set;}
+    public DbSet<Comment> Comments {get; set;}
+
+}
+```
+- inherit from `DBContext`
+    - it will bring all types of things that will allow this to happen
+
+- press `ctor` = create a constructor
+    - bring in `DbContextOptions`, naming it as `dbContextOptions`
+    - bring in a base
+        - base = allow to pass DB context into the `dbContext`
+        - we have our own `dbContext` but the base will pass it up into the actual inherited `DBContext` (the one at the top)
+
+- add the tables
+    - wrap the table in the `DbSet`
+        - `DbSet` will grab something out of the database 
+        - you will do something with it
+        - will return the data in whatever form you want
+        - whenever using this you are manipulating the whole entire table
+        - deferred execution 
+
+- The `ApplicationDBContext` is what will allow us to create the table
+    - with entitiy framework, going into and finding your tables and creates the database
