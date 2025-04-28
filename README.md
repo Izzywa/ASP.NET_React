@@ -165,3 +165,24 @@ public DateTime CreatedOn {get; set;} = DateTime.Now
 - this automatically fills with the current datetime whenever the data is created
 
 # entity framework
+ORM = object relational mapper
+- called Entity framework in .NET
+- take db tables and turn into object
+
+need to install entity framework
+- Microsoft.EntityFrameworkCore.SqlServer
+- Microsoft.EntityFrameworkCore.Tools
+- Microsoft.EntityFrameworkCore.Design
+
+Command + shift + p = open NuGet Gallery
+- install `EntityFrameworkCore.SqlServer` = install everything for you
+- make sure it mathces 
+    - open `api.csproj`
+    - check `<TargetFrameword>` and get the correct version
+
+- install `EntityFrameworkCore.Tools`
+
+- install `Microsoft.EntityFrameworkCore.Design`
+
+## create a `data` foler in the project folder
+- create a new C# folder named `ApplicationDBContext`
