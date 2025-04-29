@@ -223,3 +223,20 @@ public class ApplicationDBContext : DBContext
 
 - The `ApplicationDBContext` is what will allow us to create the table
     - with entitiy framework, going into and finding your tables and creates the database
+    - this is where we will keep the `Stocks` and `Comments`
+    - linking up the database to the actual code 
+
+## hook up the database context
+before the `var app = builder.build()` in the `Program.cs` file
+```
+builder.Services.AddDbContext<ApplicationDBContext>(options => {
+    options.useSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+```
+- pass in the application that we just built
+- in the options, we choose which type of DB we decided to use
+    - `GetConnectionString("DefaultConnection")` will search in the app settings json
+    - need to add the connection to the app settings
+
+## SQL Server management Studio
+- open up SQL Server management studio
