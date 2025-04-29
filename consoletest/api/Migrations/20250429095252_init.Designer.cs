@@ -11,7 +11,7 @@ using api.data;
 namespace api.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20250429094112_init")]
+    [Migration("20250429095252_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -75,7 +75,7 @@ namespace api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Stock");
+                    b.ToTable("Stocks");
                 });
 
             modelBuilder.Entity("api.Models.Comment", b =>
