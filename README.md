@@ -274,4 +274,8 @@ builder.Services.AddDbContext<ApplicationDBContext>(options => {
 - every different database will use different connection string
     - need to format the connection string based on that
 
+```
+dotnet ef migrations add <migrationname>
+dotnet ef database update
+```
 ** Could not use SQL Server management Studio as being on Mac **
