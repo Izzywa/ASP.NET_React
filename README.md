@@ -240,3 +240,38 @@ builder.Services.AddDbContext<ApplicationDBContext>(options => {
 
 ## SQL Server management Studio
 - open up SQL Server management studio
+- add new database with a name
+- in `appsettings.json` add the database that was just created to the connection string
+```
+{
+    "ConnectionStrings": {
+        "DefaultConnection": 
+    },
+    "Logging":{
+        "LogLevel":{
+            "Default": "Information",
+            "Microsoft.AspNetCore": "Warning"
+        }
+    }.
+    "AllowedHosts": "*"
+}
+```
+- add what was added withing the `program.cs`
+    - have `DefaultConnection`
+    - can add as many as you want to
+    - add a connection string
+- template connection string
+```
+"Data Source=DESKTOP-U39R90D\\SQLEXPRESS;Initial Catalog=finshark;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
+```
+- to change:
+    - the `source=DESKTOP-u3R90D`
+        - get the desktop by checking the properties of the database that was just created
+    - `Catalog=Finshark`
+        - this is the name of the database
+        - change to the name of the database
+
+- every different database will use different connection string
+    - need to format the connection string based on that
+
+** Could not use SQL Server management Studio as being on Mac **
