@@ -7,8 +7,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi(); // supported by Microsoft
 
+/*
 builder.Services.AddDbContext<ApplicationDBContext>(options => {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});*/
+builder.Services.AddDbContext<ApplicationDBContext>(options => {
+    options.UseMySQL(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
 //builder.Services.AddEndpointsApiExplorer();

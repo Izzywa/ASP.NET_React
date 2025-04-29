@@ -11,6 +11,7 @@ namespace api.data
     {
         public ApplicationDBContext(DbContextOptions dbContextOptions)
         : base(dbContextOptions)
+        //public ApplicationDBContext(DbContextOptions<dbContextOptions> context) : base(context)
         {
             
         }  
