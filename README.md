@@ -279,3 +279,4 @@ dotnet ef migrations add <migrationname>
 dotnet ef database update
 ```
 ** Could not use SQL Server management Studio as being on Mac **
+** attempt to use SQLite for database **

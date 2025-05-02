@@ -1,0 +1,110 @@
+commit 5fb17b9c4907ca5c16b05f9e0cbb918cda2105ec
+Author: Izzatul Najwa <ismail.izzatulnajwa@gmail.com>
+Date:   Fri May 2 11:58:53 2025 +0800
+
+    update readme
+
+commit 186946e2c4eb69373a238bf2216972ac66b9acbc
+Author: Izzatul Najwa <ismail.izzatulnajwa@gmail.com>
+Date:   Fri May 2 11:58:05 2025 +0800
+
+    create alternative.md file
+
+commit 09068ff2b609f2d971f43ff2a87a18627bcbf99a
+Author: Izzatul Najwa <ismail.izzatulnajwa@gmail.com>
+Date:   Tue Apr 29 20:37:51 2025 +0800
+
+    up to this point could create migrations but could not update database
+
+commit 9bc0468d7cfb5778451d2c2e63c797af299aacd3
+Author: Izzatul Najwa <ismail.izzatulnajwa@gmail.com>
+Date:   Tue Apr 29 19:33:43 2025 +0800
+
+    try another tutorial to use MySQL
+
+commit 809660acbb63922e7cef635e8c7a70bcd041d3fd
+Author: Izzatul Najwa <ismail.izzatulnajwa@gmail.com>
+Date:   Tue Apr 29 17:41:34 2025 +0800
+
+    managed to make migration with mysql
+
+commit 9a0c8d1ac74b9cfae17b32a69132cf47e91e9bcc
+Author: Izzatul Najwa <ismail.izzatulnajwa@gmail.com>
+Date:   Tue Apr 29 14:27:04 2025 +0800
+
+    note about sql server management studio
+
+commit 479780f7a0198c1d75424e9bb5af689e04c6b472
+Author: Izzatul Najwa <ismail.izzatulnajwa@gmail.com>
+Date:   Tue Apr 29 12:48:54 2025 +0800
+
+    before sql server management studio
+
+commit 52dd540e97a19e9cac082b7e9054fe8f43390b3f
+Author: Izzatul Najwa <ismail.izzatulnajwa@gmail.com>
+Date:   Mon Apr 28 15:16:35 2025 +0800
+
+    created applicationDBContext file in the Data folder
+
+commit 749750af50426bb1dbdfd43f1c041181d535adc4
+Author: Izzatul Najwa <ismail.izzatulnajwa@gmail.com>
+Date:   Mon Apr 28 14:47:47 2025 +0800
+
+    installed EntityFrameworkCore SQL server, tools and design
+
+commit 302be1ad207fb42364ee540b980ba6dfb19df55a
+Merge: 5067c4b f9d337b
+Author: Izzatul Najwa binti Ismail <142208595+Izzywa@users.noreply.github.com>
+Date:   Sun Apr 27 15:34:17 2025 +0800
+
+    Merge pull request #1 from Izzywa/test_branch
+    
+    add entity framework on readme
+
+commit f9d337b7945cdd8437ae8c6b8427fc2fd870da01
+Author: Izzatul Najwa <ismail.izzatulnajwa@gmail.com>
+Date:   Sun Apr 27 15:31:37 2025 +0800
+
+    add entity framework on readme
+
+commit 5067c4b4ecdd289235440f432f650de6d59a6083
+Author: Izzatul Najwa <ismail.izzatulnajwa@gmail.com>
+Date:   Tue Apr 22 22:56:48 2025 +0800
+
+    add stock and comment models
+
+commit 492c01f669579b1988aefe3e7522ee5b2b794324
+Author: Izzatul Najwa <ismail.izzatulnajwa@gmail.com>
+Date:   Tue Apr 22 20:58:52 2025 +0800
+
+    extension
+
+commit d1855a84236ec83ac5437d70c83305c760c70c0f
+Author: Izzatul Najwa <ismail.izzatulnajwa@gmail.com>
+Date:   Tue Apr 22 14:56:59 2025 +0800
+
+    changed the launchSetting.json file to add some IISsetting values
+
+commit 954a8d31ca8f93aa599c5492b42dcd24c6a85594
+Author: Izzatul Najwa <ismail.izzatulnajwa@gmail.com>
+Date:   Tue Apr 22 14:02:42 2025 +0800
+
+    add swagger endpoint to openapi.json to finally show swagger UI
+
+commit 18297ae837181969438b1cc08161653ffb6dfc6b
+Author: Izzatul Najwa <ismail.izzatulnajwa@gmail.com>
+Date:   Tue Apr 22 13:44:47 2025 +0800
+
+    included swashbuckle package and added swaggerUI in Program.cs
+
+commit 5389abf58dc141368b9b1f2c628d44a6fc32cf8a
+Author: Izzatul Najwa <ismail.izzatulnajwa@gmail.com>
+Date:   Tue Apr 22 12:52:39 2025 +0800
+
+    installed dotnet and used the webapi template
+
+commit b27a50b6f2e35827305f7216180b7b9c36376306
+Author: Izzatul Najwa <ismail.izzatulnajwa@gmail.com>
+Date:   Tue Apr 22 12:02:45 2025 +0800
+
+    first commit
