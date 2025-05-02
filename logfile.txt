@@ -1,14 +1,8 @@
-commit 5fb17b9c4907ca5c16b05f9e0cbb918cda2105ec
+commit 01fbcb41b8544604936ae82d2a0b0d8f35d8798d
 Author: Izzatul Najwa <ismail.izzatulnajwa@gmail.com>
-Date:   Fri May 2 11:58:53 2025 +0800
+Date:   Fri May 2 12:00:35 2025 +0800
 
-    update readme
-
-commit 186946e2c4eb69373a238bf2216972ac66b9acbc
-Author: Izzatul Najwa <ismail.izzatulnajwa@gmail.com>
-Date:   Fri May 2 11:58:05 2025 +0800
-
-    create alternative.md file
+    update readme about sqlite
 
 commit 09068ff2b609f2d971f43ff2a87a18627bcbf99a
 Author: Izzatul Najwa <ismail.izzatulnajwa@gmail.com>
