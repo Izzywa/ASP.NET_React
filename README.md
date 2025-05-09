@@ -339,3 +339,7 @@ dotnet ef database update --context SchoolDbContext
 
 # creating API endpoints
 add endpoints before `app.Run()` in the `Program.cs`
+
+- try out the endpoints with `dotnet watch`
+    - When using post to insert new student data, does not need to insert student ID as it is automatically generatd by the database
+    
