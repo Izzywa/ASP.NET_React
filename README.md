@@ -409,12 +409,13 @@ Next.js has 2 different routers:
 system requirements
 - latest Node.js
 
-automatic installation
+**automatic installation**
 ```
 npx create-next-app@latest
 ```
 
-create the `app` directory
+**create the `app` directory**
+
 - Next.js uses file-sytem routing
     - routes in your app are determined by how you structure your files
 - create `app` folder > `layout.tsx` file
@@ -439,6 +440,57 @@ create the `public` folder (optional)
     - ex: `public/profile.png` can be referenced as `/profile.png`
 
 **Run the development server**
+
 1. run `npm run dev` 
 2. visit `http://localhost:3000`
 3. edit `app/page.tsx` file and save to see the updated result in the browser
+
+**set up TypeScript**
+
+- next.js comes with built in typescript support
+- to add TypeScript to project, rename a file to `.ts` or `.tsx`
+- next.js will automatically install the necessary dependencies and add `tsconfig.json` file
+
+IDE plugin
+- next.js includes custom TypeScript plugin and type checker
+- VSCode can use for advanced type-checking and auto-completion
+- enable plugin
+    - open command palette (ctrl + shift + p)
+    - searching for "TypeScript: Select TypeScript Version"
+    - selecting "Use Workspace Version"
+
+**set up ESLint**
+
+- built in 
+
+**setup absolute imports and module path aliases**
+
+- next.js has in built support for the `"paths"` and `"baseUrl"` options of `tsconfig.json` and `jsconfig.json` files
+- these options allow to alias project directories to absolute paths
+- cleaner to import modules
+
+```
+// Before
+import { Button } from '../../../components/button'
+ 
+// After
+import { Button } from '@/components/button'
+```
+
+- configure absolute imports:
+    - add `baseUrl` configuration option to `tsconfig.json` file 
+    - can use `"paths"` to `"alias"` module paths
+
+```
+{
+  "compilerOptions": {
+    "baseUrl": "src/",
+    "paths": {
+      "@/styles/*": ["styles/*"],
+      "@/components/*": ["components/*"]
+    }
+  }
+}
+```
+- this configuration maps `@/components/*` to `components/*`
+- each of the `"paths"` are relative to the `baseUrl` location
