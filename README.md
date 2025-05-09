@@ -294,7 +294,7 @@ folder to be added to the project folder
 - Data
     - need to have a database context class since using entity framework
     - create SchoolDbContext class file
-    
+
 
 
 - Models
@@ -315,3 +315,22 @@ folder to be added to the project folder
     "DefaultConnection": "DataSource=school.db"
 }
 ```
+
+- prepare studentdbcontext in the data file
+( for some reason, csvconfiguration causing error. resolved by installing through terminal with `dotnet add package CsvHelper` even when package added with NuGet package manager )
+
+in program.cs file
+- add some code to associate the database context class with the connection string
+
+do migrations
+```
+dotnet ef migrations add m1 -o Data/Migrations --context SchoolDbcontext
+```
+- make the migration named `m1` and output it to the `Data/Migraitons` folder
+- since have more than one context, use `--context` to specify 
+
+apply the migrations
+```
+dotnet ef database update --context SchoolDbContext
+```
+- this will create the database and put some data into it

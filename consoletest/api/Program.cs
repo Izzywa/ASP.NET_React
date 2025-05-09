@@ -1,5 +1,6 @@
 using api.data;
 using Microsoft.EntityFrameworkCore;
+using StudentsApi.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,16 +8,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi(); // supported by Microsoft
 
-/*
-builder.Services.AddDbContext<ApplicationDBContext>(options => {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-});*/
-builder.Services.AddDbContext<ApplicationDBContext>(options => {
-    options.UseMySQL(builder.Configuration.GetConnectionString("DefaultConnection"));
-});
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection"); // reads the connection string
+builder.Services.AddDbContext<SchoolDbContext>(option => option.UseSqlite(connectionString)); 
+// associating the connectionstring with the schooldbcontext class
+// registers schooldbcontext as a singleton
 
-//builder.Services.AddEndpointsApiExplorer();
-//builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

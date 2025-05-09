@@ -1,12 +1,362 @@
 {
   "Version": 1,
-  "Hash": "A9PKRZfZUTDhj1QRyCFFkEHzqJ04Y7sk6OEkYYD+as4=",
+  "Hash": "KDAmFROIXornFZhZvfr/wcw+IDCYu/xFEGHAhBNZALo=",
   "Source": "api",
   "BasePath": "_content/api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "api/wwwroot",
+      "Source": "api",
+      "ContentRoot": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/wwwroot/",
+      "BasePath": "_content/api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/obj/Debug/net9.0/compressed/meetebz9s5-fup8xqamt8.gz",
+      "SourceId": "api",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/api",
+      "RelativePath": "students#[.{fingerprint=fup8xqamt8}]?.csv.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/wwwroot/students.csv",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "xe4koq7wne",
+      "Integrity": "p3wlQHKYMWOJqaKEUaRNPhcslpVVYJLvEPk6Y+z7YnA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/wwwroot/students.csv"
+    },
+    {
+      "Identity": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/wwwroot/students.csv",
+      "SourceId": "api",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/wwwroot/",
+      "BasePath": "_content/api",
+      "RelativePath": "students#[.{fingerprint}]?.csv",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fup8xqamt8",
+      "Integrity": "1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/students.csv"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "students.csv",
+      "AssetFile": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/obj/Debug/net9.0/compressed/meetebz9s5-fup8xqamt8.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.010309278351"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "96"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p3wlQHKYMWOJqaKEUaRNPhcslpVVYJLvEPk6Y+z7YnA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 03:36:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ="
+        }
+      ]
+    },
+    {
+      "Route": "students.csv",
+      "AssetFile": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/wwwroot/students.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "89"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 03:36:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ="
+        }
+      ]
+    },
+    {
+      "Route": "students.csv.gz",
+      "AssetFile": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/obj/Debug/net9.0/compressed/meetebz9s5-fup8xqamt8.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "96"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p3wlQHKYMWOJqaKEUaRNPhcslpVVYJLvEPk6Y+z7YnA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 03:36:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-p3wlQHKYMWOJqaKEUaRNPhcslpVVYJLvEPk6Y+z7YnA="
+        }
+      ]
+    },
+    {
+      "Route": "students.fup8xqamt8.csv",
+      "AssetFile": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/obj/Debug/net9.0/compressed/meetebz9s5-fup8xqamt8.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.010309278351"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "96"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p3wlQHKYMWOJqaKEUaRNPhcslpVVYJLvEPk6Y+z7YnA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 03:36:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fup8xqamt8"
+        },
+        {
+          "Name": "label",
+          "Value": "students.csv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ="
+        }
+      ]
+    },
+    {
+      "Route": "students.fup8xqamt8.csv",
+      "AssetFile": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/wwwroot/students.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "89"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 03:36:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fup8xqamt8"
+        },
+        {
+          "Name": "label",
+          "Value": "students.csv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ="
+        }
+      ]
+    },
+    {
+      "Route": "students.fup8xqamt8.csv.gz",
+      "AssetFile": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/obj/Debug/net9.0/compressed/meetebz9s5-fup8xqamt8.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "96"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p3wlQHKYMWOJqaKEUaRNPhcslpVVYJLvEPk6Y+z7YnA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 03:36:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fup8xqamt8"
+        },
+        {
+          "Name": "label",
+          "Value": "students.csv.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-p3wlQHKYMWOJqaKEUaRNPhcslpVVYJLvEPk6Y+z7YnA="
+        }
+      ]
+    }
+  ]
 }

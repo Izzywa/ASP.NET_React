@@ -1,5 +1,304 @@
 {
   "Version": 1,
   "ManifestType": "Build",
-  "Endpoints": []
+  "Endpoints": [
+    {
+      "Route": "students.csv",
+      "AssetFile": "students.csv.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.010309278351"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "96"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p3wlQHKYMWOJqaKEUaRNPhcslpVVYJLvEPk6Y+z7YnA=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 03:36:45 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ="
+        }
+      ]
+    },
+    {
+      "Route": "students.csv",
+      "AssetFile": "students.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "89"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 03:36:45 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ="
+        }
+      ]
+    },
+    {
+      "Route": "students.csv.gz",
+      "AssetFile": "students.csv.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "96"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p3wlQHKYMWOJqaKEUaRNPhcslpVVYJLvEPk6Y+z7YnA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 03:36:45 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-p3wlQHKYMWOJqaKEUaRNPhcslpVVYJLvEPk6Y+z7YnA="
+        }
+      ]
+    },
+    {
+      "Route": "students.fup8xqamt8.csv",
+      "AssetFile": "students.csv.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.010309278351"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "96"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p3wlQHKYMWOJqaKEUaRNPhcslpVVYJLvEPk6Y+z7YnA=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 03:36:45 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fup8xqamt8"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ="
+        },
+        {
+          "Name": "label",
+          "Value": "students.csv"
+        }
+      ]
+    },
+    {
+      "Route": "students.fup8xqamt8.csv",
+      "AssetFile": "students.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "89"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 03:36:45 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fup8xqamt8"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ="
+        },
+        {
+          "Name": "label",
+          "Value": "students.csv"
+        }
+      ]
+    },
+    {
+      "Route": "students.fup8xqamt8.csv.gz",
+      "AssetFile": "students.csv.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "96"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p3wlQHKYMWOJqaKEUaRNPhcslpVVYJLvEPk6Y+z7YnA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 03:36:45 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fup8xqamt8"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-p3wlQHKYMWOJqaKEUaRNPhcslpVVYJLvEPk6Y+z7YnA="
+        },
+        {
+          "Name": "label",
+          "Value": "students.csv.gz"
+        }
+      ]
+    }
+  ]
 }

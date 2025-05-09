@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ne9T2Xx65V8=",
+  "dgSpecHash": "2s2KVqwMKdQ=",
   "success": true,
   "projectFilePath": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/api.csproj",
   "expectedPackageFiles": [
-    "/Users/izzywawa/.nuget/packages/csvhelper/2.11.0/csvhelper.2.11.0.nupkg.sha512",
+    "/Users/izzywawa/.nuget/packages/csvhelper/33.0.1/csvhelper.33.0.1.nupkg.sha512",
     "/Users/izzywawa/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/izzywawa/.nuget/packages/microsoft.aspnetcore.openapi/9.0.4/microsoft.aspnetcore.openapi.9.0.4.nupkg.sha512",
     "/Users/izzywawa/.nuget/packages/microsoft.bcl.asyncinterfaces/7.0.0/microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
@@ -20,13 +20,13 @@
     "/Users/izzywawa/.nuget/packages/microsoft.entityframeworkcore/9.0.4/microsoft.entityframeworkcore.9.0.4.nupkg.sha512",
     "/Users/izzywawa/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.4/microsoft.entityframeworkcore.abstractions.9.0.4.nupkg.sha512",
     "/Users/izzywawa/.nuget/packages/microsoft.entityframeworkcore.analyzers/9.0.4/microsoft.entityframeworkcore.analyzers.9.0.4.nupkg.sha512",
-    "/Users/izzywawa/.nuget/packages/microsoft.entityframeworkcore.design/9.0.0/microsoft.entityframeworkcore.design.9.0.0.nupkg.sha512",
+    "/Users/izzywawa/.nuget/packages/microsoft.entityframeworkcore.design/9.0.4/microsoft.entityframeworkcore.design.9.0.4.nupkg.sha512",
     "/Users/izzywawa/.nuget/packages/microsoft.entityframeworkcore.relational/9.0.4/microsoft.entityframeworkcore.relational.9.0.4.nupkg.sha512",
     "/Users/izzywawa/.nuget/packages/microsoft.entityframeworkcore.relational.design/1.1.6/microsoft.entityframeworkcore.relational.design.1.1.6.nupkg.sha512",
     "/Users/izzywawa/.nuget/packages/microsoft.entityframeworkcore.sqlite/9.0.4/microsoft.entityframeworkcore.sqlite.9.0.4.nupkg.sha512",
     "/Users/izzywawa/.nuget/packages/microsoft.entityframeworkcore.sqlite.core/9.0.4/microsoft.entityframeworkcore.sqlite.core.9.0.4.nupkg.sha512",
     "/Users/izzywawa/.nuget/packages/microsoft.entityframeworkcore.sqlite.design/1.1.6/microsoft.entityframeworkcore.sqlite.design.1.1.6.nupkg.sha512",
-    "/Users/izzywawa/.nuget/packages/microsoft.entityframeworkcore.tools/9.0.0/microsoft.entityframeworkcore.tools.9.0.0.nupkg.sha512",
+    "/Users/izzywawa/.nuget/packages/microsoft.entityframeworkcore.tools/9.0.4/microsoft.entityframeworkcore.tools.9.0.4.nupkg.sha512",
     "/Users/izzywawa/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/Users/izzywawa/.nuget/packages/microsoft.extensions.caching.abstractions/9.0.4/microsoft.extensions.caching.abstractions.9.0.4.nupkg.sha512",
     "/Users/izzywawa/.nuget/packages/microsoft.extensions.caching.memory/9.0.4/microsoft.extensions.caching.memory.9.0.4.nupkg.sha512",
@@ -43,7 +43,9 @@
     "/Users/izzywawa/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512",
     "/Users/izzywawa/.nuget/packages/microsoft.win32.primitives/4.3.0/microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "/Users/izzywawa/.nuget/packages/mono.texttemplating/3.0.0/mono.texttemplating.3.0.0.nupkg.sha512",
+    "/Users/izzywawa/.nuget/packages/mysqlconnector/2.4.0/mysqlconnector.2.4.0.nupkg.sha512",
     "/Users/izzywawa/.nuget/packages/netstandard.library/1.6.1/netstandard.library.1.6.1.nupkg.sha512",
+    "/Users/izzywawa/.nuget/packages/pomelo.entityframeworkcore.mysql/8.0.3/pomelo.entityframeworkcore.mysql.8.0.3.nupkg.sha512",
     "/Users/izzywawa/.nuget/packages/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/Users/izzywawa/.nuget/packages/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/Users/izzywawa/.nuget/packages/runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -138,11 +140,11 @@
   ],
   "logs": [
     {
-      "code": "NU1701",
+      "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'CsvHelper 2.11.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net9.0'. This package may not be fully compatible with your project.",
-      "libraryId": "CsvHelper",
+      "message": "Detected package version outside of dependency constraint: Pomelo.EntityFrameworkCore.MySql 8.0.3 requires Microsoft.EntityFrameworkCore.Relational (>= 8.0.13 && <= 8.0.999) but version Microsoft.EntityFrameworkCore.Relational 9.0.4 was resolved.",
+      "libraryId": "Microsoft.EntityFrameworkCore.Relational",
       "targetGraphs": [
         "net9.0"
       ]
