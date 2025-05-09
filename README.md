@@ -282,3 +282,36 @@ dotnet ef database update
 ** attempt to use MySQL result in failure to update database although could create a migration **
 
 ** attempt to use SQLite for database **
+packages
+```
+Microsoft.EntityFrameworkCore.SQLite
+Microsoft.EntityFrameworkCore.SQLite.Design
+CsvHelper
+```
+- the `CsvHelper` will halp read a CSV file
+
+folder to be added to the project folder
+- Data
+    - need to have a database context class since using entity framework
+    - create SchoolDbContext class file
+    
+
+
+- Models
+    - create Student class file
+    ```
+    public int StudentId (get; set;)
+    public string? LastName (get; set;)
+    public string? FirstName (get; set;)
+    public string? School (get; set;)
+    ```
+
+- wwwroot
+    - place the csv file containing the data to be populated to the databaese
+
+- add connection string to SQLite database on `appsettings.json`
+```
+"ConnectionStrings": {
+    "DefaultConnection": "DataSource=school.db"
+}
+```
