@@ -413,3 +413,32 @@ automatic installation
 ```
 npx create-next-app@latest
 ```
+
+create the `app` directory
+- Next.js uses file-sytem routing
+    - routes in your app are determined by how you structure your files
+- create `app` folder > `layout.tsx` file
+    - this is the root layout
+    - required
+    - must contain the `<html>` and `<body>` tags
+
+- create a homepage `app/page.tsx`
+
+- both will be rendered when the user visit the root of app (`/`)
+
+- if forget to create the root layout
+    - Next.js will automatically create this file when running the development server with `next dev`
+    - can optionally use a `src` folder in the root of the project = separate app's code from configuration files
+
+create the `public` folder (optional)
+- store static assets 
+    - images
+    - fonts
+    - etc
+- files inside `public` can be referenced by your code starting from the URL (`/`)
+    - ex: `public/profile.png` can be referenced as `/profile.png`
+
+**Run the development server**
+1. run `npm run dev` 
+2. visit `http://localhost:3000`
+3. edit `app/page.tsx` file and save to see the updated result in the browser
