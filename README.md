@@ -278,10 +278,12 @@ builder.Services.AddDbContext<ApplicationDBContext>(options => {
 dotnet ef migrations add <migrationname>
 dotnet ef database update
 ```
-** Could not use SQL Server management Studio as being on Mac **
-** attempt to use MySQL result in failure to update database although could create a migration **
+***Could not use SQL Server management Studio as being on Mac***
 
-** attempt to use SQLite for database **
+***attempt to use MySQL result in failure to update database although could create a migration***
+
+# attempt to use SQLite for database 
+
 packages
 ```
 Microsoft.EntityFrameworkCore.SQLite
@@ -334,3 +336,6 @@ apply the migrations
 dotnet ef database update --context SchoolDbContext
 ```
 - this will create the database and put some data into it
+
+# creating API endpoints
+add endpoints before `app.Run()` in the `Program.cs`
