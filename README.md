@@ -343,3 +343,73 @@ add endpoints before `app.Run()` in the `Program.cs`
 - try out the endpoints with `dotnet watch`
     - When using post to insert new student data, does not need to insert student ID as it is automatically generatd by the database
     
+
+# NEXT.JS
+creating react app with `npx create-react-app <appname>` is now deprecated
+- documentation supports creating with frameworks
+- there are limitations that make it difficult to build high performance production app
+
+migrate existing apps to 
+- Next.js
+- React Router
+- Expo
+
+build tools are missing tools needed to build a real production app
+
+- production apps need solutions to problems like
+    - routing
+        - most apps solve by adding a routing library like `React Router`
+
+    - data fetching
+        - common to use fetch in effect to load data
+        - but this means data is fetched after the component renders = can cause network waterfalls
+        - caused by fetching data when app renders instead of in parallel while the code is loading
+        - fetching in an effect = user has to wait longer to see the content
+        - the data could have been fetched earlier
+        - to solve this can use data fetching library = options to prefetch data = request is started before the component renders
+        - libraries work best when integrated with routing "loader" pattern = specify data dependencies at the route level
+        - however this requires correctly configuring the loaders in your app = trades off complexity for performance 
+
+    - code splitting
+        - app is shiped as a single bundle
+        - should split code into separate bundles = user only needs to download what they need
+        - only downloading the code user need to see the page they are on = decreases the time the user needs to wait to load your app
+
+    - accessibility
+    - asset loading
+    - authentication
+    - caching
+    - error handling
+    - mutating data
+    - optimistic updates
+    - progressive enhancement
+    - server-side rendering
+    - static site generation
+    - streaming
+
+frameworks
+
+- impose some opinions about structuring your app
+- provide a much better user experience
+
+- recommended:
+    - Next.js
+    - React Router
+    - Expo
+
+# getting started with Next.js
+## app router and pages router
+
+Next.js has 2 different routers:
+- **App Router**: the newer router that supports new React features like Server Components
+- **Pages Router**: The original router, still supported and being improved
+
+## setting up
+
+system requirements
+- latest Node.js
+
+automatic installation
+```
+npx create-next-app@latest
+```
