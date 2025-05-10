@@ -644,3 +644,71 @@ use `<Link>` component to navigate between routes
 - provide prefetching and client side navigation
 - the primary recommended way to navigate between routes 
 - can also use the `useRouter` hook for more advanced navigation
+
+## layout.js
+- used to define a layout in app
+
+the root layout in the root `app` directory is used to define the `<html>` and `<body>` tags and other globally shared UI
+
+**reference**
+
+_props_
+- `children` (required)
+    - layout components should accept and use a `children` prop
+    - during rendering, `children` will be populated with the route segments the layout is wrapping
+    - this will be component of a child layout (if it exists) or page
+    - could also be other special viles like Loading or error when applicable
+
+- `params` (optional)
+    - a promise
+    - resolves to an object containing the dynamic route parameters object from the root segment down to that layout
+
+example route
+- `app/dashboard/[team]/layout.js` = URL `/dashboard/1` = `{ team: '1' }`
+- `app/dashboard/[team]/[item]/layout.js` = URL `/dashboard/1/2` = `{ team: '1', item: '2' }`
+- `app/dashboard/[...slug]/layout.js` = URL `/dashboard/1/2` = `{ slug: ['1','2'] }`
+
+params prop is a promise
+- must use `async/await` or React's `use` funtion to access the values
+
+**root layout**
+- `app` directory must include a root `app/layout.js`
+- must define `<html>` and `<body>` tags
+- should not manually add `<head>` tags
+    - use `MetaData API`
+    - automatically handles advanced requirements 
+    - streaming and de-duplicating `<head>` elements
+
+- use route groups to create multiple root layouts
+    - navigating acros multiple root layouts will cause a full page load
+    - unlike a client side navigation
+
+
+**caveats**
+- intentionally cannot access the raw request object in a layout
+- can access headers and cookies through server only functions
+
+layouts do not rerender
+- can be cached and reused to avoid unnecessary computation when navigating between pages
+- restricting layouts from accessing the raw request = prevent execution of potentially slow or expensive user code 
+- enforces consistenct and predictable behaviour for layouts
+- simplifies development and debugging
+
+layouts do not receive `searchParams`
+- pages do
+- a shared layout is not rerendered during navigation = stale `searchParams` between navigations
+- client side nav = only renders the part of the bage below the common layout between 2 routes
+    - `dashboard/layout.tsx` = common layout for `/dashboard/settings` and `/dashboard/analytics`
+    - navigating from `settings` to `analytics`
+        - `page.tsx` in `analytics` will rerender on the server
+        - `dashboard/layout.tsx` will not rerender because its a common UI shared between the 2 routes
+
+- navigation between pages quicker
+    - because `dashboard/layout.tsx` doesn't re-render = `searchParams` prop in the layout might become stale after navigation
+        - use the Page `searchParams` prop 
+        - or `useSearchParams` hook in a client component within the layout which is rerendered on the client with the latest searchParams
+
+**layouts cannot access `pathname`**
+- layouts are server components by default = don't rerender  = `pathname` becoming stale
+- extract the logic that depends on pathname into a client component + inport it inot your layouts
+- can use `usePathname` to access the current pathname and prevent staleness

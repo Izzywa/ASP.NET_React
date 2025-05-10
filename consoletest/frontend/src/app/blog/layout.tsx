@@ -5,7 +5,7 @@ export default function BlogLayout({
 }) {
     return (
         <>
-        <h1>navbar</h1>
+        <h2>Blog</h2>
     <section>{children}</section>
     </>
 )

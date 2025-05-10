@@ -1,5 +1,10 @@
 //function generateStaticParams() {}
 
-export default function Page() {
-    return <h1>Hello, Blog post page!</h1>
+export default async function Page({
+    params,
+}: {
+    params: Promise<{ blogpost: string}>
+}) {
+    const { blogpost } = await params
+    return <h1>welcome to {blogpost} blogpost</h1>
 }
