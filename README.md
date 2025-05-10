@@ -586,3 +586,61 @@ route groups
     - these live in the root of a project 
 
 _the simplest takeaway is to choose a strategy that works for you and your team and be consistent across the project_
+
+
+## how to create layouts and pages
+
+Next.js uses _file-system based routing_
+- can use folders and files to define routes
+
+### creating a page
+page = UI rendered on a specific route
+- add a `page` file inside the `app` directory
+- default export a React component
+- create an index at page(`/`)
+
+### creating a layout
+layout = UI shared between multiple pages
+- on navigation, layouts:
+    - preserve state
+    - remain interactive
+    - do not rerender
+
+- default export a react component from a layout file
+- the commponent should accept a children prop
+    - children can be a page or another layout
+
+**root layout**
+- defined at the root of the app directory
+- required and must contain html and body tags
+
+### creating a nested route
+nested route = route composed of multiple URL segments
+
+`/blog/[slug]` route is composed of 3 segments
+- `/` (root segment)
+- `blog` (segment)
+- `[slug]` (leaf segment) 
+
+folders = define the route segments that map to URL segments
+files = create UI that is shown for a segment
+
+create nested routes = nest folders inside each other
+- add `page.tsx` file makes the nested route publicly acccessible
+- continue nesting folders to create nested routes
+
+wrapping a folder name in square brackets (`[slug]`) = creates a dynamic route segment
+- generate multiple pages from data
+
+### nesting layouts
+layouts are also nested 
+- wrap child layouts via the `children` prop
+- nest layouts by adding `layout` inside specific route segments (folders)
+
+### linking between pages
+use `<Link>` component to navigate between routes
+- built in Next.js components
+- extend the `<a>` tag
+- provide prefetching and client side navigation
+- the primary recommended way to navigate between routes 
+- can also use the `useRouter` hook for more advanced navigation
