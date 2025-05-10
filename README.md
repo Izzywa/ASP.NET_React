@@ -494,3 +494,95 @@ import { Button } from '@/components/button'
 ```
 - this configuration maps `@/components/*` to `components/*`
 - each of the `"paths"` are relative to the `baseUrl` location
+
+## project structure and organisation
+**folder ad file conventions**
+
+top level folders = organise app's code and static assets
+- `app` = app router
+- `pages` = pages router
+- `public` = static assets to be servd
+- `src` = optinal app source folder
+
+top level files
+- configure app
+- manage dependencies
+- run middleware
+- integrate monitoring tools
+- define env var
+
+* `next.config.js` = configuration file for Next.js
+* `package.json` = Project dependencies and scripts
+* `instrumentation.ts` = OpenTelemetry and instrumentation file
+* `middleware.ts` = Next.js request middleware
+* `.env` = environment variables
+* `.env.local` = local env var
+* `.env.production` = production env var
+* `.env.development` = development env var
+* `.eslintrc.json` = config file for ESLint
+* `.gitignore` = git files and folders to ignore
+* `next-env.d.ts` = TypeScript declaration file for Next.js
+* `tsconfig.json` = Config file for TypeScript
+* `jsconfig.json` = config file for JavaScript
+
+routing files
+- `layout` .js/.jsx/.tsx = Layout
+- `page` .js/.jsx/.tsx = Page
+- `loading` .js/.jsx/.tsx = Loading UI
+- `not-found` .js/.jsx/.tsx = Not found UI
+- `error` .js/.jsx/.tsx = Error UI
+- `gloabal-error` .js/.jsx/.tsx = global error UI
+- `route` .js/.ts = API endpoint
+- `template` .js/.jsx/.tsx = re-rendered layout
+- `default` .js/.jsx/.tsx = parallel route fallback page
+
+**organising your project**
+Next.js is unopinionated about how you organise and colocate your project files
+- does provide several features to help organise project
+
+component hierarchy
+- components defined in special fiels are rendered in a specific hierarchy
+    - `layout.js`
+    - `template.js`
+    - `error.js`
+    - `loading.js`
+    - `not-found.js`
+    - `page.js` or nested `layout.js`
+
+- components of a route segment will be nested inside the components of its parent segment
+
+colocation
+- in `app` directory, nested folders define route structure
+- each folder represents a route segment that is mapped to a corresponding segment in a URL path
+- route is not publicly accessible until a `page.js` or `route.js` file is added to a route segment
+- only the content returned by `page.js` or `route.js` is sent to the clinet
+    - project files can be safely colocated inside route segments in the `app` directory without accidentally being routable
+- can also keep project files outside the `app` directory
+
+private flders
+- prefixing folder with and underscore: `_folderName`
+- should not be considered by the routing system
+- useful for
+    - separating UI logic from routing logic
+    - organising internal files across a project and Next.js ecosystem
+    - sorting and grouping files in code editors
+    - avoiding potential naming conflicts with future Next.js file conventions
+
+- can mark files outside private folders as private by ysing the same underscore pattern
+
+
+route groups
+- created by wrapping a folder in parenthesis: `(foldername)`
+- indicates the folder is for organisational purpose
+    - should not be included in the route's URL path
+- ex: `(admin)/dashboard/page.js` ==> `/dashboard`
+- useful for
+    - organising routes by site section, intent, or team
+    - enabling nested layouts in the same route segment level
+
+`src` folder
+- support storing app code inside an optional `src` folder
+- this separates app code from project config files 
+    - these live in the root of a project 
+
+_the simplest takeaway is to choose a strategy that works for you and your team and be consistent across the project_
