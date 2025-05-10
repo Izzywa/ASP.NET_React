@@ -3,14 +3,14 @@
     <StaticWebAssetEndpoint Include="_content/api/students.csv">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\students.csv'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1711e01anZ1F2fn2vSaD\u002BeUnidKP7ZnbIFqLjmOg8CQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"89"},{"Name":"Content-Type","Value":"text/csv"},{"Name":"ETag","Value":"\u00221711e01anZ1F2fn2vSaD\u002BeUnidKP7ZnbIFqLjmOg8CQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 09 May 2025 03:36:45 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-FuHjnYZO1kzl3uY/IXU69/g28HIZ10/5v1PgfOWAsYw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"88"},{"Name":"Content-Type","Value":"text/csv"},{"Name":"ETag","Value":"\u0022FuHjnYZO1kzl3uY/IXU69/g28HIZ10/5v1PgfOWAsYw=\u0022"},{"Name":"Last-Modified","Value":"Fri, 09 May 2025 14:31:17 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/api/students.fup8xqamt8.csv">
+    <StaticWebAssetEndpoint Include="_content/api/students.yygoj47r76.csv">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\students.csv'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"fup8xqamt8"},{"Name":"integrity","Value":"sha256-1711e01anZ1F2fn2vSaD\u002BeUnidKP7ZnbIFqLjmOg8CQ="},{"Name":"label","Value":"_content/api/students.csv"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"89"},{"Name":"Content-Type","Value":"text/csv"},{"Name":"ETag","Value":"\u00221711e01anZ1F2fn2vSaD\u002BeUnidKP7ZnbIFqLjmOg8CQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 09 May 2025 03:36:45 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"yygoj47r76"},{"Name":"integrity","Value":"sha256-FuHjnYZO1kzl3uY/IXU69/g28HIZ10/5v1PgfOWAsYw="},{"Name":"label","Value":"_content/api/students.csv"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"88"},{"Name":"Content-Type","Value":"text/csv"},{"Name":"ETag","Value":"\u0022FuHjnYZO1kzl3uY/IXU69/g28HIZ10/5v1PgfOWAsYw=\u0022"},{"Name":"Last-Modified","Value":"Fri, 09 May 2025 14:31:17 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

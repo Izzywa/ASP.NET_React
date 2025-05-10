@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>fup8xqamt8</Fingerprint>
-      <Integrity>1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ=</Integrity>
+      <Fingerprint>yygoj47r76</Fingerprint>
+      <Integrity>FuHjnYZO1kzl3uY/IXU69/g28HIZ10/5v1PgfOWAsYw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\students.csv'))</OriginalItemSpec>

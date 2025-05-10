@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KDAmFROIXornFZhZvfr/wcw+IDCYu/xFEGHAhBNZALo=",
+  "Hash": "ofxxiiEnSRqwfXakU7aL8fT6aZR+qSoMWH7mi2bqPjo=",
   "Source": "api",
   "BasePath": "_content/api",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/obj/Debug/net9.0/compressed/meetebz9s5-fup8xqamt8.gz",
+      "Identity": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/obj/Debug/net9.0/compressed/meetebz9s5-yygoj47r76.gz",
       "SourceId": "api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/api",
-      "RelativePath": "students#[.{fingerprint=fup8xqamt8}]?.csv.gz",
+      "RelativePath": "students#[.{fingerprint=yygoj47r76}]?.csv.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -31,8 +31,8 @@
       "RelatedAsset": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/wwwroot/students.csv",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "xe4koq7wne",
-      "Integrity": "p3wlQHKYMWOJqaKEUaRNPhcslpVVYJLvEPk6Y+z7YnA=",
+      "Fingerprint": "a9yplbfoul",
+      "Integrity": "rqqLh6gIhGdb5XwpibfDeTteJDKj581Mgj3GqZ3Pv40=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/wwwroot/students.csv"
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fup8xqamt8",
-      "Integrity": "1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ=",
+      "Fingerprint": "yygoj47r76",
+      "Integrity": "FuHjnYZO1kzl3uY/IXU69/g28HIZ10/5v1PgfOWAsYw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/students.csv"
@@ -62,12 +62,12 @@
   "Endpoints": [
     {
       "Route": "students.csv",
-      "AssetFile": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/obj/Debug/net9.0/compressed/meetebz9s5-fup8xqamt8.gz",
+      "AssetFile": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/obj/Debug/net9.0/compressed/meetebz9s5-yygoj47r76.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.010309278351"
+          "Quality": "0.010526315789"
         }
       ],
       "ResponseHeaders": [
@@ -77,15 +77,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "96"
+          "Value": "94"
         },
         {
           "Name": "ETag",
-          "Value": "\"p3wlQHKYMWOJqaKEUaRNPhcslpVVYJLvEPk6Y+z7YnA=\""
+          "Value": "\"rqqLh6gIhGdb5XwpibfDeTteJDKj581Mgj3GqZ3Pv40=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 03:36:45 GMT"
+          "Value": "Fri, 09 May 2025 14:31:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -105,13 +105,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ=\""
+          "Value": "W/\"FuHjnYZO1kzl3uY/IXU69/g28HIZ10/5v1PgfOWAsYw=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ="
+          "Value": "sha256-FuHjnYZO1kzl3uY/IXU69/g28HIZ10/5v1PgfOWAsYw="
         }
       ]
     },
@@ -126,7 +126,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "89"
+          "Value": "88"
         },
         {
           "Name": "Content-Type",
@@ -134,11 +134,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ=\""
+          "Value": "\"FuHjnYZO1kzl3uY/IXU69/g28HIZ10/5v1PgfOWAsYw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 03:36:45 GMT"
+          "Value": "Fri, 09 May 2025 14:31:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -148,13 +148,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ="
+          "Value": "sha256-FuHjnYZO1kzl3uY/IXU69/g28HIZ10/5v1PgfOWAsYw="
         }
       ]
     },
     {
       "Route": "students.csv.gz",
-      "AssetFile": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/obj/Debug/net9.0/compressed/meetebz9s5-fup8xqamt8.gz",
+      "AssetFile": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/obj/Debug/net9.0/compressed/meetebz9s5-yygoj47r76.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -163,7 +163,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "96"
+          "Value": "94"
         },
         {
           "Name": "Content-Type",
@@ -171,11 +171,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"p3wlQHKYMWOJqaKEUaRNPhcslpVVYJLvEPk6Y+z7YnA=\""
+          "Value": "\"rqqLh6gIhGdb5XwpibfDeTteJDKj581Mgj3GqZ3Pv40=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 03:36:45 GMT"
+          "Value": "Fri, 09 May 2025 14:31:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -193,18 +193,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-p3wlQHKYMWOJqaKEUaRNPhcslpVVYJLvEPk6Y+z7YnA="
+          "Value": "sha256-rqqLh6gIhGdb5XwpibfDeTteJDKj581Mgj3GqZ3Pv40="
         }
       ]
     },
     {
-      "Route": "students.fup8xqamt8.csv",
-      "AssetFile": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/obj/Debug/net9.0/compressed/meetebz9s5-fup8xqamt8.gz",
+      "Route": "students.yygoj47r76.csv",
+      "AssetFile": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/obj/Debug/net9.0/compressed/meetebz9s5-yygoj47r76.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.010309278351"
+          "Quality": "0.010526315789"
         }
       ],
       "ResponseHeaders": [
@@ -214,15 +214,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "96"
+          "Value": "94"
         },
         {
           "Name": "ETag",
-          "Value": "\"p3wlQHKYMWOJqaKEUaRNPhcslpVVYJLvEPk6Y+z7YnA=\""
+          "Value": "\"rqqLh6gIhGdb5XwpibfDeTteJDKj581Mgj3GqZ3Pv40=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 03:36:45 GMT"
+          "Value": "Fri, 09 May 2025 14:31:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -242,13 +242,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ=\""
+          "Value": "W/\"FuHjnYZO1kzl3uY/IXU69/g28HIZ10/5v1PgfOWAsYw=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fup8xqamt8"
+          "Value": "yygoj47r76"
         },
         {
           "Name": "label",
@@ -256,12 +256,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ="
+          "Value": "sha256-FuHjnYZO1kzl3uY/IXU69/g28HIZ10/5v1PgfOWAsYw="
         }
       ]
     },
     {
-      "Route": "students.fup8xqamt8.csv",
+      "Route": "students.yygoj47r76.csv",
       "AssetFile": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/wwwroot/students.csv",
       "Selectors": [],
       "ResponseHeaders": [
@@ -271,7 +271,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "89"
+          "Value": "88"
         },
         {
           "Name": "Content-Type",
@@ -279,11 +279,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ=\""
+          "Value": "\"FuHjnYZO1kzl3uY/IXU69/g28HIZ10/5v1PgfOWAsYw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 03:36:45 GMT"
+          "Value": "Fri, 09 May 2025 14:31:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -293,7 +293,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fup8xqamt8"
+          "Value": "yygoj47r76"
         },
         {
           "Name": "label",
@@ -301,13 +301,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1711e01anZ1F2fn2vSaD+eUnidKP7ZnbIFqLjmOg8CQ="
+          "Value": "sha256-FuHjnYZO1kzl3uY/IXU69/g28HIZ10/5v1PgfOWAsYw="
         }
       ]
     },
     {
-      "Route": "students.fup8xqamt8.csv.gz",
-      "AssetFile": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/obj/Debug/net9.0/compressed/meetebz9s5-fup8xqamt8.gz",
+      "Route": "students.yygoj47r76.csv.gz",
+      "AssetFile": "/Users/izzywawa/Downloads/personal Projects/ASPReact/consoletest/api/obj/Debug/net9.0/compressed/meetebz9s5-yygoj47r76.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -316,7 +316,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "96"
+          "Value": "94"
         },
         {
           "Name": "Content-Type",
@@ -324,11 +324,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"p3wlQHKYMWOJqaKEUaRNPhcslpVVYJLvEPk6Y+z7YnA=\""
+          "Value": "\"rqqLh6gIhGdb5XwpibfDeTteJDKj581Mgj3GqZ3Pv40=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 03:36:45 GMT"
+          "Value": "Fri, 09 May 2025 14:31:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -346,7 +346,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fup8xqamt8"
+          "Value": "yygoj47r76"
         },
         {
           "Name": "label",
@@ -354,7 +354,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-p3wlQHKYMWOJqaKEUaRNPhcslpVVYJLvEPk6Y+z7YnA="
+          "Value": "sha256-rqqLh6gIhGdb5XwpibfDeTteJDKj581Mgj3GqZ3Pv40="
         }
       ]
     }

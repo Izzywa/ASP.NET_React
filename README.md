@@ -743,7 +743,7 @@ _props_
 - Client Component cannt be async
     - use React's `use` function to read the promise
 
-## Link
+### Link
 - `href` = required
 - `replace`
     - defaults to false 
@@ -754,3 +754,48 @@ _props_
     - when navigate to a new page, scroll position will stay the same as long as the page is visible in the viewport
     - if page not visible in the keyboard = will scroll to the top of the first page element
     - `scroll = {false}` = will not attempt to scroll to the first page element
+
+## how to optimise images
+- size optimmisation
+    - automatically serving correctly sized images for each device
+- visual stability
+    - preventing layout shift automatically when images are loading
+- faster page loads
+    - only loading images when they enter te viewport using native browser lazy loading
+    - optional blur up placeholdrs
+- asset flexibility
+    - resizing images on demand
+
+## fetching data
+
+fetch data using:
+- the `fetch` API
+- an ORM or database
+
+**with the fetch API**
+- turn the component into an asynhronous function
+
+**streaming**
+- `dynamicIO` config option need to be enabled in the app
+
+when using `async/await` = next.js will opt into dynamic rendering
+- data will be fetched and rendered on the server for every user request
+- slow data requests = whole route will be blocked from rendering
+
+implementing streaming in app
+- `loading.js` file
+- react's `<suspense>` component
+
+with `loading.js`
+- can create a `loading.js` file in the same folder as your page to stream the entire page while the data is being fetched
+- user will immediately see the layout and a loading state while the page is being rendered
+- `loading.js` will be nested inside `layout.js`
+- will automatically wrap the `page.js` file and any children below in a `<Suspense>` boundary
+
+with `<Suspense>`
+- allows to be more granular about what parts of the page to srream
+- can immediately show any page content that falls outside of the `<Suspense>` boundary
+
+an instant loading state is a fallback UI that shows immediately to the user after navigation
+- best user experience = design loading states that are meaningful and help users understand the app is responding
+
