@@ -1,3 +1,5 @@
+import { Suspense } from "react"
+
 export default function StudentLayout({
     children,
 }: {
@@ -5,7 +7,10 @@ export default function StudentLayout({
 }) {
     return (
         <>
+        <h1>students table</h1>
+        <Suspense>
         {children}
+        </Suspense>
         </>
     )
 }

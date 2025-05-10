@@ -799,3 +799,4 @@ with `<Suspense>`
 an instant loading state is a fallback UI that shows immediately to the user after navigation
 - best user experience = design loading states that are meaningful and help users understand the app is responding
 
+## how to update data
