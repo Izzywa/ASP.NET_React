@@ -712,3 +712,45 @@ layouts do not receive `searchParams`
 - layouts are server components by default = don't rerender  = `pathname` becoming stale
 - extract the logic that depends on pathname into a client component + inport it inot your layouts
 - can use `usePathname` to access the current pathname and prevent staleness
+
+## page.js
+allows to define UI that is unique to a route
+- a `page` is always the leaf of the route subtree
+- a `page` file is required to make a route segment publicly accessible
+- pages are server components by default, but can be set to a client component
+
+**reference**
+
+_props_
+- `params` (optional)
+    - a promise that resolves to an object
+    - containing the dynamic route parameters 
+
+- `searchParams` (optional)
+    - promise that resolves to an object containing the search parameters of the current URL
+    - `/shop?a=1` = {a: '1'}
+    - `/shop?a=1&b=2` = {a: '1', b: '2'}
+    - `/shop?a=1&a=2` = {a: ['1', '2']}
+
+    - a Dynamic API whose values cannot be known ahead of time
+        - using it = page into dynamic rendering at request time
+
+    - a plain JavaScript object
+
+**handling filtering with `searchParams`**
+
+- handle filtering, pagination, or sorting based on the query string of the URL
+- Client Component cannt be async
+    - use React's `use` function to read the promise
+
+## Link
+- `href` = required
+- `replace`
+    - defaults to false 
+    - true = `next/link` will replace the current history state instead of adding a new URL into into the browser's history
+- `scroll`
+    - default = true
+    - default scrolling behavior = maintain scroll position 
+    - when navigate to a new page, scroll position will stay the same as long as the page is visible in the viewport
+    - if page not visible in the keyboard = will scroll to the top of the first page element
+    - `scroll = {false}` = will not attempt to scroll to the first page element

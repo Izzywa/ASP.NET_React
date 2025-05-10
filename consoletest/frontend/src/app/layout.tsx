@@ -1,5 +1,7 @@
 import Link from "next/link"
 
+
+
 export default function DashboradLayout({
     children,
 }: {
@@ -21,6 +23,14 @@ export default function DashboradLayout({
                     <li>
 
                     <Link href={`/blog/${'item'}`}>item blogpost</Link>
+                    </li>
+
+                    <li>
+                        <Link
+                            href={{
+                                pathname: '/blog/sortedPost',
+                                query: {filters: 'sorted'}
+                            }}>sorted blog post</Link>
                     </li>
                     </ul>
                 </header>
