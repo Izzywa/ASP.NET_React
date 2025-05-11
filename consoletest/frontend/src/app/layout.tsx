@@ -1,6 +1,15 @@
 import Link from "next/link"
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter"
+import { Roboto } from 'next/font/google';
+import { ThemeProvider } from "@mui/material/styles"
+import theme from "@/theme";
 
-
+const roboto = Roboto({
+    weight: ['300', '400', '500', '700'],
+    subsets: ['latin'],
+    display: 'swap',
+    variable: '--font-roboto',
+});
 
 export default function DashboradLayout({
     children,
@@ -8,8 +17,10 @@ export default function DashboradLayout({
     children: React.ReactNode
 }) {
     return(
-        <html lang="en">
+        <html lang="en" className={roboto.variable}>
             <body>
+                <AppRouterCacheProvider>
+                    <ThemeProvider theme={theme}>
                 {/* Layout UI */}
                 {/* Place children where you want to render a page or nested layout */}
                 <header>
@@ -35,6 +46,8 @@ export default function DashboradLayout({
                     </ul>
                 </header>
                 <main>{children}</main>
+                </ThemeProvider>
+                </AppRouterCacheProvider>
             </body>
         </html>
     )
