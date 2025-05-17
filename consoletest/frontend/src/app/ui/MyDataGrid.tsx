@@ -11,11 +11,11 @@ export default function MyDataGrid({
     idName } : {
 
         rows: [];
-        col: []
+        col: GridColDef[]
         idName: string;
     }) {
 
-    const columns: GridColDef<(typeof rows)[number]>[] = col
+    const columns: GridColDef[] = col
 
 
   return (
@@ -31,6 +31,7 @@ export default function MyDataGrid({
             },
           },
         }}
+        checkboxSelection
       />
     </Box>
   );

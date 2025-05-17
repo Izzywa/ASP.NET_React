@@ -1,4 +1,4 @@
-import Link from "next/link"
+//1import Link from "next/link"
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter"
 import { Roboto } from 'next/font/google';
 import { ThemeProvider } from "@mui/material/styles"
@@ -23,7 +23,7 @@ export default function DashboradLayout({
                     <ThemeProvider theme={theme}>
                 {/* Layout UI */}
                 {/* Place children where you want to render a page or nested layout */}
-                <header>
+                {/*<header>
                     <ul>
                     <li>
                     <Link href={'/'}>home</Link>
@@ -44,7 +44,7 @@ export default function DashboradLayout({
                             }}>sorted blog post</Link>
                     </li>
                     </ul>
-                </header>
+                </header>*/}
                 <main>{children}</main>
                 </ThemeProvider>
                 </AppRouterCacheProvider>

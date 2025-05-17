@@ -800,3 +800,11 @@ an instant loading state is a fallback UI that shows immediately to the user aft
 - best user experience = design loading states that are meaningful and help users understand the app is responding
 
 ## how to update data
+**creating server functions**
+
+- use the `use server` directive
+- place at the top of an asynchronous function
+
+
+**client components**
+- can invoke server functions in client components
