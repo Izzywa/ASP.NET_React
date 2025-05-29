@@ -18,7 +18,7 @@ git diff --stat --ignore-cr-at-eol .| awk '
 }
 '
 
-#test line 2
+#line 2
 echo ""
 
 max=0
@@ -46,7 +46,7 @@ else
         fi
     fi
 
-    #test here
+    #line 3
     #test here
     #test here
     echo "RUN TESTS HERE"
