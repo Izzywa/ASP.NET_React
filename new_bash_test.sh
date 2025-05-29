@@ -37,11 +37,13 @@ do
 
 done
 
+# display warning if either deletion or addition in a particular file exceed 20
 if [ $max_addition -ge 20 ] || [ $max_deletion -ge 20 ]; then
     echo "\n${RED}Too many addition ($max_addition) or deletion ($max_deletion) \nThis will reslult in reduced marks${NC}"
 
 else 
-    if [ $max_addition -ge 15 ] || [ $max_deletion -ge 15 ]; then
+# edit the threshold depending on how often you want to commit
+    if [ $max_addition -ge 10 ] || [ $max_deletion -ge 10 ]; then
         read -p "Enter commit message or press ENTER to abort commit: " message
         if [ -z "${message}" ]; then
             echo "${GREEN}ABORT COMMIT${NC}"
