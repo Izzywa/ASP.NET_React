@@ -18,7 +18,8 @@ git diff --stat --ignore-cr-at-eol .| awk '
 }
 '
 
-#line 2
+# git log --numstat --pretty=oneline -w --ignore-cr-at-eol --ignore-blank-lines | tac | awk 'BEGIN{init = 1; flag = 0} {if (init==0 && $1 ~ /^[0-9]+$/ && ($1>20 || $2>20)) {print "too many insertions (",$1,") or deletions (",$2,") in file ", $3; flag=1}}  {if (length($1) == 40) {init=0; if (flag==1) {print "in commit",$0,"\n"; flag =0}}}' > artifacts/abnormal-log.txt
+        
 echo ""
 
 max=0
@@ -35,7 +36,7 @@ if [ $max -ge 20 ]; then
     echo "${RED}TOO MANY CHANGES \nTHIS WILL RESULT IN REDUCED MARKS${NC}"
 
 else 
-    if [ $max -ge 10 ]; then
+    if [ $max -ge 15 ]; then
         read -p "Enter commit message or press ENTER to abort commit: " message
         if [ -z "${message}" ]; then
             echo "${GREEN}ABORT COMMIT${NC}"
@@ -46,9 +47,7 @@ else
         fi
     fi
 
-    #line 3
-    #test here
-    #test here
+    #line  3
     echo "RUN TESTS HERE"
 
 fi
