@@ -18,6 +18,7 @@ git diff --stat --ignore-cr-at-eol .| awk '
 }
 '
 
+#test here
 echo ""
 
 max=0
@@ -31,11 +32,11 @@ do
 done
 
 if [ $max -ge 20 ]; then
-    echo "${RED}TOO MUCH CHANGES \nREVERT AND COMMIT${NC}"
+    echo "${RED}TOO MANY CHANGES \nTHIS WILL RESULT IN REDUCED MARKS${NC}"
 
 else 
     if [ $max -ge 10 ]; then
-        read -p "enter commit message or press ENTER to abort commit: " message
+        read -p "Enter commit message or press ENTER to abort commit: " message
         if [ -z "${message}" ]; then
             echo "${GREEN}ABORT COMMIT${NC}"
         
@@ -45,6 +46,9 @@ else
         fi
     fi
 
+    #test here
+    #test here
+    #test here
     echo "RUN TESTS HERE"
 
 fi
