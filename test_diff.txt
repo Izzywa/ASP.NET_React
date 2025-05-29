@@ -1,0 +1,12 @@
+test diff  .gitignore                                                          | 2 ++ 
+
+test diff  consoletest/api/obj/Debug/net9.0/api.AssemblyInfo.cs                | 2 +- 
+
+test diff  consoletest/api/obj/Debug/net9.0/api.AssemblyInfoInputs.cache       | 2 +- 
+
+test diff  consoletest/api/obj/Debug/net9.0/api.csproj.CoreCompileInputs.cache | 2 +- 
+
+test diff  consoletest/api/obj/Debug/net9.0/api.sourcelink.json                | 2 +- 
+
+test diff  5 files changed, 6 insertions(+), 4 deletions(-) 
+
