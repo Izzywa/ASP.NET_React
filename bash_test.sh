@@ -18,7 +18,7 @@ git diff --stat --ignore-cr-at-eol .| awk '
 }
 '
 
-#test here
+#test line 2
 echo ""
 
 max=0

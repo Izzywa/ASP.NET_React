@@ -1,6 +1,0 @@
-abnormal-log.txt 3 
-
-bash_test.sh 8 
-
-test_diff.txt 12 
-
